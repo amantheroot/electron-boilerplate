@@ -1,0 +1,18 @@
+{
+  "name": "vitta",
+  "version": "0.1.0",
+  "description": "Billing Software",
+  "main": "main.js",
+  "scripts": {
+    "electron-dev": "electron .",
+    "express-dev": "cd express && npm run dev",
+    "dev": "concurrently --kill-others \"npm run electron-dev\" \"npm run express-dev\"",
+    "setup": "npm install && cd express && npm run express-setup"
+  },
+  "author": "Aman Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "electron": "^4.1.4"
+  }
+}
